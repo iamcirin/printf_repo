@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+struct s_printf - defines a structure for symbols and functions
+*
+* @spec_c: The operator
+* @func: The function associated
+*/
+
 typedef struct s_printf
 {
     char *spe_c;
