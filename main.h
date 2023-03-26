@@ -6,20 +6,21 @@
 
 typedef struct s_printf
 {
-    char spe_c;
+    char *spe_c;
     int (*func)(va_list);
-} sprintf;
+} s_printf;
 
 int _printf(const char *format, ...);
 
 int print_char(va_list);
+int print_num(int n);
 int print_int(va_list);
 int print_str(va_list);
 int print_percent(va_list);
 
 int _write_char(char);
 
-int select_f(const char *format, sprintf func_arr[], va_list arg_list);
+int select_f(const char *format, s_printf func_arr[], va_list arg_list);
 
 
 
